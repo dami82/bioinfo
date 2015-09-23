@@ -6,7 +6,7 @@
 my_genes<- c("GAPDH","XRCC6","CUL4B", "LEF1", "TCF7L2")
 
 #input data
-setwd("R/homemade_tools/RPKM_tool/")
+setwd("R/homemade_tools/RPKM_tool/") # change to project directory... must contain raw reads csv file
 list.files()
 read_counts <- read.csv("counts.csv", header = T, as.is=T)
 
