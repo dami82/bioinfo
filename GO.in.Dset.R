@@ -26,6 +26,8 @@ my_keyword<-c("protein acetylation","deacetylase", "deacetylation")
 # 2) duplicated symbols: check before starting the analysis and decide what to keep
 # 3) Weird FoldChange column: transform in Log2FC (Oncomine provides values that are
 #    >1 for upreg genes and < (-1) for downreg genes)
+# 
+# csv files are not provided, but you can easily download them from Oncomine
 
 dataset_UP <- read.csv("Crabtree_Uterus_Gene_List_up.csv", header = FALSE, as.is=TRUE)
 colnames(dataset_UP) <- dataset_UP[3,]
